@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bilge Bilgin{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static "style/style.css" %}">
+    <!-- ! bootstrap start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- ! bootstrap end -->
+    <!-- ! Google Fonts start -->
+    <!-- ! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- ! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Exo+2:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- ! Google Fonts end -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body >
+  {% block content %}
+    <!-- navbar start -->
+    {% include "includes/_navbar.html" %}
+    <!-- navbar end -->
+
+    <div class="main">
+        <div class="pre-about">
+            <h3 class="name" >Bilge</h3>
+            <h1 class="surname">Bilgin</h1>
+            <p class="info-about">Bilg(e+in)</p>
+            <div>
+                <a class="btn btn-outline-primary" href="#resume" >Resume</a>
+                <button class="btn btn-outline-primary">Portfolio</button>
+            </div>
+
+            <div class="icons">
+                <a href="" class="text-dark fs-1"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/blgeblgn/" target="_blank" class="text-dark fs-1"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+       
+            <div class="about" id="resume">
+            <div class=" naber  d-flex justify-content-between  ">
+
+                <div class="row d-flex justify-content-center  container m-auto w-100">
+
+                  <div class="col-lg-6 col-md-12 d-flex justify-content-center text-center container-fluid">
+                    <div class="left-info  container">
+                      <h4 class="about-aboutheader pt-5">ABOUT</h4>
+                      <h2 class="mail-info">Crazybilge12@gmail.com</h2>
+      
+                       <p class="aboutMe mt-5 m-auto">A delusional girl with over 20 years of overthinking experience. I am owner and founder (not co founder) of bilg(e+in) brand. I can dance, do art, give emotional support. My biggest power is slaying every day which makes me a slay queen. <br><br>
+ 
+                         Dreams: to live until 2100 <br><br>
+                         
+                         Thank you for reading sis 🙏
+                      </p> 
+                    
+                         
+                             <!-- <video width="200px" class="video" src="./image/0225b48744424506b4ba51bc21520f51.MOV" controls autoplay ></video> -->
+      
+                         <h4 class="mt-5 city">İstanbul</h4>
+                         <p class="num">--05531065215--</p>
+                         </div>
+                  </div>
+                  
+                  
+                  <div class="col-lg-6 col-md-12 mt-auto d-flex flex-column  justify-content-center  ">
+                    <div class="right-info m-auto ">
+                      
+                      
+                      <img height="300px" width="400px" class="bilgePhoto" src="{% static "./image/bgen.png" %}" alt="">
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+         
+            <div class="sliderCar bg-dark">
+                <div class="slider d-flex w-50 m-auto ">
+                    <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img height="500px" src="./image/çizim.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bilgenin Eserleri</h5>
+                                <p>Bilge güzel ve tatlı ve yetenekli bi hatundur.</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img height="500px" src="./image/çizim1.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img height="500px" src="./image/çizim2.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            {% endblock content %}
+
+            <!-- !Footer start -->
+             {% include "includes/_footer.html" %}
+            <!-- !Footer end -->
+
+           
+
+    <!-- !FontAwsome start -->
+    <script src="https://kit.fontawesome.com/90e60cee9a.js" crossorigin="anonymous"></script>
+    <!-- !FontAwsome end -->
+    <!-- !Bootrsrap start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- ! bootstrap end -->
+    <script src="{% static "app/script.js" %}"></script>
+</body>
+</html>

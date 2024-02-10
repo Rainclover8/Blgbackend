@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}Yazilar{% endblock title %}
+
+{% block content %}
+{% include "includes/_navbar.html" %}
+
+<div class="d-flex">
+  <div class="row">
+  {% for yazi in deneme %}
+    <div class="col-lg-3 col-md-4 col-sm-12">
+      <div class="card">
+        <img src="{{yazi.yaziFotosu.url}}" class="card-img-top" alt="...">
+        <div class="card-body ">
+          <h5 class="card-title">{{yazi.yaziAdi}}</h5><hr>
+          <p class="card-text text-info ">{{yazi.yaziAltBaslik}}</p><hr>
+          <p>{{yazi.yaziAciklama}}</p>
+        </div>
+      </div>
+  </div>
+  {% endfor %}
+</div>
+</div>
+    
+
+</body>
+
+{% endblock content %}

@@ -1,0 +1,164 @@
+/*
+font-family: 'Cairo', sans-serif;
+font-family: 'Exo 2', sans-serif;
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+  background-color: #0D112D;
+}
+
+.main{ 
+ min-height: 100vh;  
+ background-image: url(/static/image/blg-foto.png); 
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+.name{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+    
+}
+
+.surname{
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: azure;
+}
+.info-about{
+    font-size: 20px;
+    font-weight: bolder;
+    color: azure;
+}
+.icons{
+    font-size: 30px;
+    cursor: pointer;
+}
+.pre-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Bu kısım değişebilir / kaldırılabilir */
+    align-items: center;
+    /* Bu kısım değişebilir / kaldırılabilir */
+    min-height: 100vh;   
+    max-width: 100vw !important;
+}
+
+.about{
+    height: 100vh;
+    background-color: #000;
+    max-width: 100vw !important;
+}
+
+
+.about-aboutheader{
+    text-decoration: underline;
+    color: #2C609C;
+    font-size: 47px;
+}
+.mail-info{
+    color: cadetblue;
+}
+.aboutMe{
+    /* text-align: center; */
+    width: 400px;
+    color: #2C609C;
+}
+.bilgePhoto{
+  width: inherit;
+    
+}
+
+.num, .city{
+    color: cadetblue;
+}
+
+/* .sliderCar{
+    height: 200px;
+} */
+
+.iconsFooter{
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+/* Responsive */
+/* @media (max-width:873px){
+    .bilgePhoto{
+       width: 200px;
+    }
+}
+
+@media (max-width:831px){
+    .about-aboutheader{
+        font-size: 30px;
+    }
+    .mail-info{
+        font-size: 20px;
+    }
+    .aboutMe{
+        width: 300px;
+    }
+}
+
+@media (max-width:726px){
+    .bilgePhoto{
+        width: 300px;
+    }
+}
+
+@media (max-width:624px){
+    .aboutMe{
+        font-size: x-small;
+        width: 200px;
+    }
+}
+@media (max-width:576px){
+    .about-aboutheader{
+       font-size: 20px;
+    }
+    .mail-info{
+        font-weight: 100;
+        font-size: x-small;
+    }
+}
+
+@media (max-width:527px){
+    .bilgePhoto{
+        width: 300px;
+        height: 500px;
+    }
+    .aboutMe{
+        width: 100px;
+        height: 200px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:441px){
+    .bilgePhoto{
+        width: 200px;
+        height: 200px;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:342px){
+    .bilgePhoto{
+        width: 120px;
+    }
+
+} */
